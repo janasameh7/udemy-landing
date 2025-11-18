@@ -144,10 +144,11 @@ export default function UdemyLanding() {
 
       {/* Minimal CSS so this runs without a build system for styles */}
     <style>{`
+    
 :root{--container:1100px;--muted:#6b7280;}
 *{box-sizing:border-box}
 body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;margin:0;color:#111;background:#f5f7ff}
-.container{max-width:var(--container);margin:0 auto;padding:28px}
+.container{width:100%;margin:0 auto;padding:28px}
 .nav{background:white;border-bottom:1px solid #e6e6e6}
 .nav-inner{display:flex;align-items:center;justify-content:space-between}
 .logo{font-weight:700}
@@ -158,9 +159,9 @@ body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Rob
 
 
 .hero{display:flex;gap:24px;align-items:center;padding:48px 0}
-.hero-left{flex:1}
-.hero-right{flex:1;display:flex;justify-content:center}
-.hero-right img{max-width:520px;width:100%;border-radius:8px}
+.hero-left{flex:1;padding-left: 40px;max-width: 100%;}
+.hero-right{flex:1;display:flex;justify-content:center;overflow:hidden}
+.hero-right img{padding-right:40px;max-width:100%;height:auto;border-radius:12px !important;object-fit: cover;}
 .hero h1{font-size:36px;margin:0 0 12px}
 .subtitle{color:var(--muted);margin:0 0 18px}
 .cta{background:#111;color:white;padding:12px 18px;border-radius:8px;border:none;font-weight:600}
